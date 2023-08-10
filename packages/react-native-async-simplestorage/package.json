@@ -1,0 +1,59 @@
+{
+  "name": "@nbottarini/react-native-async-simplestorage",
+  "version": "1.0.0",
+  "description": "React Native Async Storage implementation for @nbottarini/simplestorage",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "browser": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "react-native": "dist/esm/index.js",
+  "author": "Nicolás Bottarini <nicolasbottarini@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/nbottarini/simplestorage-js#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nbottarini/simplestorage-js.git"
+  },
+  "keywords": [
+    "storage",
+    "react-native",
+    "javascript",
+    "typescript",
+    "solid",
+    "dependency inversion"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint . && tsc --noEmit"
+  },
+  "dependencies": {
+    "@nbottarini/simplestorage": "^1.0.0"
+  },
+  "devDependencies": {
+    "@react-native-async-storage/async-storage": "^1.17.7",
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "eslint": "^8.46.0",
+    "rollup": "^3.27.2",
+    "rollup-plugin-dts": "^5.3.1",
+    "rollup-plugin-exclude-dependencies-from-bundle": "^1.1.23",
+    "tslib": "^2.6.1",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "@react-native-async-storage/async-storage": "^1.17.7"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">= 18.0.0"
+  }
+}
