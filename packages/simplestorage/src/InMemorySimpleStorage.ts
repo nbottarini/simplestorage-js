@@ -10,4 +10,8 @@ export class InMemorySimpleStorage implements SimpleStorage {
     async set(key: string, value: string) {
         this.data.set(key, value)
     }
+
+    async remove(key: string) {
+        this.data.delete(key)
+    }
 }
