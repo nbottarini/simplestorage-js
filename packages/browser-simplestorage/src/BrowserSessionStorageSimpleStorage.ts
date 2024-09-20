@@ -8,4 +8,8 @@ export class BrowserSessionStorageSimpleStorage implements SimpleStorage {
     async set(key: string, value: string) {
         sessionStorage.setItem(key, value)
     }
+
+    async remove(key: string) {
+        sessionStorage.removeItem(key)
+    }
 }

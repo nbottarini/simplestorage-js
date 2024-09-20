@@ -9,4 +9,8 @@ export class ReactNativeAsyncSimpleStorage implements SimpleStorage {
     async set(key: string, value: string) {
         await AsyncStorage.setItem(key, value)
     }
+
+    async remove(key: string) {
+        await AsyncStorage.removeItem(key)
+    }
 }

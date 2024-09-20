@@ -8,4 +8,8 @@ export class BrowserLocalStorageSimpleStorage implements SimpleStorage {
     async set(key: string, value: string) {
         localStorage.setItem(key, value)
     }
+
+    async remove(key: string) {
+        localStorage.removeItem(key)
+    }
 }

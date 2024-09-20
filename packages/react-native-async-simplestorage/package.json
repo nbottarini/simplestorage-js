@@ -1,6 +1,6 @@
 {
   "name": "@nbottarini/react-native-async-simplestorage",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "React Native Async Storage implementation for @nbottarini/simplestorage",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -30,7 +30,7 @@
     "lint": "eslint . && tsc --noEmit"
   },
   "dependencies": {
-    "@nbottarini/simplestorage": "^1.0.0"
+    "@nbottarini/simplestorage": "workspace:^"
   },
   "devDependencies": {
     "@react-native-async-storage/async-storage": "^1.17.7",
